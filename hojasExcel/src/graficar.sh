@@ -18,5 +18,14 @@ do
 	let M=M+1
 done 2>error1.log
 
+M=0
+
+for archivo in `find $SALIDA_DATOS -name "*.csv"`
+do
+	echo "Dando formato al archivo de datos: $archivo"
+	cat $archivo  | awk -F "\",\"" '{print $1 " " $2 " " $3 " " $4 " "  $5}' | grep -v Sensor | sed '1,$ s/"//g' > $SALIDA_DATOS/dato-$M.out
+	
+	let M=M+1
+done 2> error2.log
 
 

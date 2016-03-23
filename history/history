@@ -1,72 +1,3 @@
-  118  ls
-  119  sudo su -
-  120  sudo netstat -vantp
-  121  sudo su -
-  122  ls
-  123  cd Desktop/
-  124  ls
-  125  cd ../
-  126  cd Desktop/
-  127  ls
-  128  cd ../Downloads/
-  129  ls
-  130  impressive --no-logo LS2-Caso\ de\ Estudio.pdf 
-  131  impressive LS2-Caso\ de\ Estudio.pdf 
-  132  lsblk
-  133  parted -l
-  134  sudo parted -l
-  135  cd Desktop/
-  136  ls
-  137  cd ../
-  138  cd Downloads/
-  139  ls
-  140  impressive LS2-Caso\ de\ Estudio.pdf 
-  141  sudo su -
-  142  clear
-  143  sudo su -
-  144  ls
-  145  cd Downloads/
-  146  ls
-  147  impressive LVM\ -\ 00\ -\ Introducción\,\ terminología\ y\ componentes.pdf 
-  148  ssh sysadmin@192.168.122.92
-  149  ssh root@192.168.122.92
-  150  ssh sysadmin@192.168.122.92
-  151  htop
-  152  sudo iptables -L
-  153  sudo su -
-  154  iptables -L
-  155  sudo iptables -L
-  156  sudo su -
-  157  df -h
-  158  sudo su -
-  159  man man
-  160  df -h
-  161  cd /media/instructor/r4vsdrv/
-  162  ls
-  163  axel http://mirrors.ucr.ac.cr/ubuntu-cd/wily/ubuntu-15.10-desktop-amd64.iso
-  164  sudo apt-get install axel
-  165  axel http://mirrors.ucr.ac.cr/ubuntu-cd/wily/ubuntu-15.10-desktop-amd64.iso
-  166  wget http://mirrors.ucr.ac.cr/ubuntu-cd/wily/ubuntu-15.10-desktop-amd64.iso
-  167  fallocate 2G cosa.img
-  168  man fallocate
-  169  fallocate -l 2G cosa.img
-  170  ls -l
-  171  ls -lh
-  172  ls
-  173  ls /l
-  174  ls -l
-  175  clear
-  176  ls -l 
-  177  cd Downloads/
-  178  wget http://mirrors.ucr.ac.cr/ubuntu-cd/trusty/ubuntu-14.04.3-server-amd64.iso
-  179  test -e /var/lib
-  180  echo $?
-  181  test -e /etc/dhcpd/dhpc.conf
-  182  echo $?
-  183  clear
-  184  sudo su -
-  185  clear
-  186  hostname
   187  sudo apt-get -y purge isc-dhcp-server
   188  sudo su -
   189  ssh 192.168.222.130
@@ -968,33 +899,102 @@
  1085  git status 
  1086  git commit -m "Ejemplo dos de correo electronico y case"
  1087  gitk
- 1088  cd /media/
- 1089  cd instructor/uk/
- 1090  l;s
+ 1088  cd ..
+ 1089  ls
+ 1090  cd hojasDatos/
  1091  ls
- 1092  cd LXS2/
- 1093  ls
- 1094  cd docs/
- 1095  ls
- 1096  git remote -v
- 1097  git remote add origin https://github.com/emvarg/LX2_main_repo.git
- 1098  git remote -v
- 1099  git remote add github  https://github.com/emvarg/LX2_main_repo.git
- 1100  git remote -v
- 1101  git push -u github  master
- 1102  git remote -v
- 1103  git remote add mi_repo https://github.com/emvarg/repo1-Nivel2Linux.git
- 1104  git remote -v
- 1105  git push -u mi_repo  master
- 1106  git remote -v
- 1107  git remote --help
- 1108  git remote remove mi_repo
- 1109  git remote -v
- 1110  git branch 
- 1111  ls
- 1112  mkdir history
- 1113  ls
- 1114  tree
- 1115  cd history/
- 1116  ls
- 1117  history > history
+ 1092  ls -l
+ 1093  xls2csv datos1.xls 
+ 1094  nautilus .
+ 1095  xls2csv datos1.xls > dato_0.out 
+ 1096  less dato_0.out 
+ 1097  file dato_0.out 
+ 1098  ls
+ 1099  cd ..
+ 1100  ls
+ 1101  tree
+ 1102  cd src/
+ 1103  ls
+ 1104  bash graficar.sh 
+ 1105  tree ../
+ 1106  for archivo in `ls -l`; do echo $archivo; done
+ 1107  for archivo in ls -l; do echo $archivo; done
+ 1108  for archivo in find .../ -name "*.xls"; do echo $archivo; done
+ 1109  for archivo in `find .../ -name "*.xls"`; do echo $archivo; done
+ 1110  for archivo in `find ../ -name "*.xls"`; do echo $archivo; done
+ 1111  find ../
+ 1112  find ../ -name datos
+ 1113  find ../ -name "datos"
+ 1114  find ../ -name "*datos*"
+ 1115  find ../ -name "*.xls"
+ 1116  for archivo in `find ../ -name "*.xls"`; do ls -l $archivo; done 
+ 1117  tree ../
+ 1118  rm ../hojasDatos/dato_0.out 
+ 1119  tree ../
+ 1120  rm  -r ../hojasDatos/datos_csv/
+ 1121  tree ../
+ 1122  bash graficar.sh 
+ 1123  tree ../
+ 1124  tree -l ../
+ 1125  tree -p ../
+ 1126  ls ../hojasDatos/datos_csv/
+ 1127  ls ../hojasDatos/datos_csv/ -l
+ 1128  ls ../hojasDatos/datos_csv/ -lh
+ 1129  less ../hojasDatos/datos_csv/dato-0.csv 
+ 1130  ls -l
+ 1131  less error1.log 
+ 1132  ls
+ 1133  cd ..
+ 1134  ls
+ 1135  cd hojasDatos/
+ 1136  ls
+ 1137  ls -l
+ 1138  cd datos_csv/
+ 1139  ls -l
+ 1140  head dato-0.csv 
+ 1141  cat dato-0.csv  
+ 1142  cat dato-0.csv  | awk -F "\",\"" `{print $1 $2 $3 $4 $5}` | head
+ 1143  cat dato-0.csv  | awk -F "\",\"" '{print $1 $2 $3 $4 $5}' | head
+ 1144  cat dato-0.csv  | awk -F "\",\"" '{print $1 " " $2 " " $3 " " $4 " "  $5}' | head
+ 1145  cd ..
+ 1146  cd .
+ 1147  cd ..
+ 1148  ls
+ 1149  git status 
+ 1150  ls
+ 1151  tree
+ 1152  git add .
+ 1153  git status 
+ 1154  git commit
+ 1155  git log
+ 1156  sudo update-alternatives --config editor
+ 1157  git remote -v
+ 1158  git status 
+ 1159  git push -u github master
+ 1160  git status 
+ 1161  ls
+ 1162  cd hojasDatos/
+ 1163  kls
+ 1164  ls
+ 1165  cd ca
+ 1166  cd datos_csv/
+ 1167  ls
+ 1168  cat dato-0.csv  | awk -F "\",\"" '{print $1 " " $2 " " $3 " " $4 " "  $5}' | head
+ 1169  cat dato-0.csv  | awk -F "\",\"" '{print $1 " " $2 " " $3 " " $4 " "  $5}' | head | grep -v Sensor
+ 1170  cat dato-0.csv  | awk -F "\",\"" '{print $1 " " $2 " " $3 " " $4 " "  $5}' | grep -v Sensor | sed '1,
+ 1171  cat dato-0.csv  | awk -F "\",\"" '{print $1 " " $2 " " $3 " " $4 " "  $5}' | grep -v Sensor | sed '1,$ s/"//g'
+ 1172  cat dato-0.csv  | awk -F "\",\"" '{print $1 " " $2 " " $3 " " $4 " "  $5}' | grep -v Sensor | sed '1,$ s/"//g' | e
+ 1173  cat dato-0.csv  | awk -F "\",\"" '{print $1 " " $2 " " $3 " " $4 " "  $5}' | grep -v Sensor | sed '1,$ s/"//g' | head
+ 1174  cat dato-0.csv  | awk -F "\",\"" '{print $1 " " $2 " " $3 " " $4 " "  $5}' | grep -v Sensor | sed '1,$ s/"//g'
+ 1175  cd ..
+ 1176  ls
+ 1177  cd src/
+ 1178  ls
+ 1179  bash graficar.sh 
+ 1180  tree ../
+ 1181  head ../hojasDatos/datos_csv/dato-0.out 
+ 1182  cd ..
+ 1183  ls
+ 1184  cd history/
+ 1185  ls
+ 1186  history > history 
