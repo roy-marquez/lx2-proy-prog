@@ -1,0 +1,100 @@
+ 4895  ls
+ 4896  ls- la
+ 4897  ls -la
+ 4898  exit
+ 4899  ls /etc/
+ 4900  ls -l ~
+ 4901  ls
+ 4902  nano otro 
+ 4903  ls
+ 4904  ls -la
+ 4905  exit
+ 4906  cd /media/
+ 4907  ls
+ 4908  cd uk/s
+ 4909  cd uk/
+ 4910  ls
+ 4911  cd LXS2/
+ 4912  ls
+ 4913  cd docs/
+ 4914  ls
+ 4915  ls -l
+ 4916  cd permisos/
+ 4917  ls
+ 4918  cd ..
+ 4919  ls
+ 4920  cd src/
+ 4921  ls
+ 4922  cd ..
+ 4923  ls
+ 4924  cd ..
+ 4925  ls
+ 4926  cd tmp/
+ 4927  ls
+ 4928  cd ..
+ 4929  ls
+ 4930  ls -la
+ 4931  cd docs/
+ 4932  ls
+ 4933  ls -la
+ 4934  cd src/
+ 4935  ls
+ 4936  cd ..
+ 4937  ls
+ 4938  ls permisos/
+ 4939  ls
+ 4940  cd permisos/
+ 4941  ls
+ 4942  ls -l
+ 4943  script -t 2> tutorial.timing -a tutorial.session
+ 4944  scriptreplay -t tutorial.timing  tutorial.session 
+ 4945  ls
+ 4946  rm tutorial.*
+ 4947  ls
+ 4948  script -t 2> tutorial.timing -a tutorial.session
+ 4949  scriptreplay -t tutorial.timing  tutorial.session 
+ 4950  rm tutorial.*
+ 4951  script -t 2> tutorial.timing -a tutorial.session
+ 4952  scriptreplay -t tutorial.timing  tutorial.session 
+ 4953  script -t 2> tutorial.timing -a tutorial.session
+ 4954  scriptreplay -t tutorial.timing  tutorial.session 
+ 4955  ls
+ 4956  rm tutorial.*
+ 4957  exit
+ 4958  script -t 2> tutorial.timing -a tutorial.session
+ 4959  ls -l
+ 4960  scriptreplay -t tutorial.timing  tutorial.session 
+ 4961  ls
+ 4962  ls -la
+ 4963  ls
+ 4964  rm tutorial.*
+ 4965  ls
+ 4966  man scriptreplay 
+ 4967  man sha1sum 
+ 4968  apt-cache search lolcat
+ 4969  sudo apt-get install lolcat
+ 4970  ls -l
+ 4971  dmesg | tail 
+ 4972  dmesg | tail   | lolcat -F 0.3
+ 4973  dmesg | tail   | lolcat -F 0.4
+ 4974  dmesg | tail   | lolcat -F 0.5
+ 4975  watch -n 1 "dmesg | tail   | lolcat -F 0.5"
+ 4976  # "dmesg | tail   | lolcat -F 0.5"
+ 4977  man while
+ 4978  help while
+ 4979  while TRUE; do dmesg | tail   | lolcat -F 0.5; done
+ 4980  while 1; do dmesg | tail   | lolcat -F 0.5; done
+ 4981  while ; do dmesg | tail   | lolcat -F 0.5; done
+ 4982  echo $TRUE
+ 4983  TRUE=1
+ 4984  echo $TRUE
+ 4985  while TRUE ; do dmesg | tail   | lolcat -F 0.5; done
+ 4986  while $TRUE ; do dmesg | tail   | lolcat -F 0.5; done
+ 4987  while true ; do dmesg | tail   | lolcat -F 0.5; done
+ 4988  man lolcat 
+ 4989  clc
+ 4990  clear
+ 4991  while true ; do dmesg | tail   | lolcat -F 0.5 | clear; done
+ 4992  while true ; do dmesg | tail   | lolcat -F 0.5 ; done
+ 4993  ls
+ 4994  history | tail -n 100 > history.out
