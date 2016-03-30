@@ -1,0 +1,2 @@
+Cmnd_Alias ADMIN_CMDS=/usr/bin/passwd,/usr/sbin/useradd,/usr/sbin/adduser,/usr/sbin/userdel,/usr/sbin/usermod,/usr/sbin/visudo
+Cmnd_Alias SHUTDOWN_CMDS=/sbin/poweroff,/sbin/reboot,/sbin/halt
