@@ -1,0 +1,10 @@
+[   32.284876] IPv6: ADDRCONF(NETDEV_UP): virbr1-nic: link is not ready
+[   32.284923] IPv6: ADDRCONF(NETDEV_UP): virbr1-nic: link is not ready
+[   32.284927] virbr1: port 1(virbr1-nic) entered listening state
+[   32.284935] virbr1: port 1(virbr1-nic) entered listening state
+[   32.369974] virbr0: port 1(virbr0-nic) entered listening state
+[   32.369988] virbr0: port 1(virbr0-nic) entered listening state
+[   32.383824] virbr0: port 1(virbr0-nic) entered disabled state
+[   32.899166] virbr1: port 1(virbr1-nic) entered disabled state
+[   37.175868] FAT-fs (sdb1): Volume was not properly unmounted. Some data may be corrupt. Please run fsck.
+[  300.454349] perf interrupt took too long (2501 > 2500), lowering kernel.perf_event_max_sample_rate to 50000
