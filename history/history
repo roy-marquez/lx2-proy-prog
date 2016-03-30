@@ -1,197 +1,3 @@
-  352  sh primerPrograma.sh 
-  353  vim primerPrograma.sh
-  354  ls
-  355  sh primerPrograma.sh 
-  356  echo $VAR1
-  357  export VAR1
-  358  echo $VAR1
-  359  sh primerPrograma.sh 
-  360  printenv | grep VAR
-  361  vim primerPrograma.sh
-  362  sh primerPrograma.sh 
-  363  echo $VAR1
-  364  vim primerPrograma.sh
-  365  sh primerPrograma.sh 
-  366  vim primerPrograma.sh
-  367  env PATH=$PATH:algunLugar sh primerPrograma.sh 
-  368  env PATH=algunLugar sh primerPrograma.sh 
-  369  env PATH=/bin:algunLugar sh primerPrograma.sh 
-  370  echo $PATH
-  371  cat  primerPrograma.sh
-  372  vim sdbjfgsf
-  373  ls
-  374  cat nohup.out 
-  375  ssh uk@pris.eie.ucr.ac.cr
-  376  echo $UID
-  377  id
-  378  dmesg | grep init
-  379  cat nohup.out 
-  380  echo "hola" > nohup.out 
-  381  cat nohup.out 
-  382  grep algo *
-  383  grep algo * 2> error.log
-  384  cat error.log 
-  385  kls
-  386  ls
-  387  echo algo >> nohup.out 
-  388  cat nohup.out
-  389  grep algo *
-  390  grep algo * 2> error.log
-  391  cat error.log 
-  392  grep algo * 2>> error.log
-  393  cat error.log 
-  394  grep algo * > error.log
-  395  cat error.log 
-  396  grep algo * &> error.log
-  397  vim error.log 
-  398  cat << EOF
-  399  hola
-  400  mundo
-  401  EOF
-  402  cat << EOF
-  403  #!/bin/bash
-  404  echo "Esta sesion es de $USER en el tarro $HOSTNAME"
-  405  echo Done
-  406  EOF
-  407  cat << EOF > script.mio
-  408  #!/bin/bash
-  409  echo "Esta sesion es de $USER en el tarro $HOSTNAME"
-  410  echo Done
-  411  EOF
-  412  cat script.mio 
-  413  sh script.mio 
-  414  ls -l
-  415  chmod 750 script.mio
-  416  ls -l
-  417  ./script.mio 
-  418  cat <> EOF
-  419  cat <> script.mio 
-  420  cat script.mio 
-  421  ./script.mio <> script.mio 
-  422  cat script.mio 
-  423  ./script.mio <> script.mio2 
-  424  cat script.mio
-  425  cat script.mio2 
-  426  ls
-  427  cd Documents/
-  428  ls
-  429  mkdir test
-  430  ls
-  431  cd test/
-  432  l;s
-  433  ls
-  434  mkdir prueba1
-  435  mkdir prueba2
-  436  mkdir prueba3
-  437  ls
-  438  rm -r *
-  439  ls
-  440  mkdir prueba[1,2,3]
-  441  ls -l
-  442  mkdir prueba[1 2 3]
-  443  ls -l
-  444  mkdir prueba[1-3]
-  445  ls -l
-  446  mkdir prueba{1-3}
-  447  ls -l
-  448  mkdir prueba{1,3}
-  449  ls -l
-  450  rm -r *
-  451  ls -l
-  452  mkdir prueba{1,3}
-  453  ls -l
-  454  mkdir prueba{1,2,3}
-  455  rm -r *
-  456  mkdir prueba{1,2,3}
-  457  ls -l
-  458  mkdir -p prueba{1,2,3}/test2/test{2,3,4}
-  459  tree
-  460  ls
-  461  echo "Este es un usuario $USER"
-  462  echo 'Este es un usuario $USER'
-  463  echo Este es un usuario \$USER
-  464  echo Este es $HOSTNAME un usuario \$USER
-  465  ps
-  466  ps -aux
-  467  ps -aux | less
-  468  pstree
-  469  pstree | less
-  470  tree
-  471  pstree | less
-  472  cd 
-  473  ls
-  474  ps aux  | grep lightdm 
-  475  kill -9 865
-  476  sudo kill -9 865
-  477  kill -9 865
-  478  sudo kill -9 865
-  479  google-chrome &
-  480  google-chrome
-  481  totem
-  482  ext
-  483  google-chrome &
-  484  ls
-  485  top
-  486  htop
-  487  vim holamundo.sh
-  488  ls
-  489  cd Documents/
-  490  ls
-  491  cd test/
-  492  ls
-  493  tree
-  494  job
-  495  jobs
-  496  fg
-  497  jobs
-  498  man fg
-  499  info fg
-  500  cd 
-  501  vim asdjkkfg
-  502  vim hola
-  503  jobs
-  504  fg 2
-  505  jobs
-  506  fg 3
-  507  ls
-  508  jobs
-  509  vim hola
-  510  jobs
-  511  htop
-  512  ls
-  513  ls -a
-  514  vim .bashrc 
-  515  echo $PATH
-  516  cat .bashrc 
-  517  source .bashrc 
-  518  echo $PATH
-  519  cd /etc/
-  520  ls
-  521  vim bash.bashrc 
-  522  cd 
-  523  ;s
-  524  ls
-  525  htop
-  526  top
-  527  free
-  528  free -h
-  529  uptime
-  530  top
-  531  uptime
-  532  exit
-  533  echo $PATH
-  534  htop
-  535  exit
-  536  w
-  537  ls
-  538  bash
-  539  htop
-  540  sh
-  541  echo $SHELL
-  542  ls
-  543  dmesg  | grep init
-  544  ls
-  545  vim .bashrc 
   546  dmesg 
   547  fg
   548  micomando
@@ -945,56 +751,250 @@
  1296  ls -l
  1297  less problema1.0.sh 
  1298  cat problema1.0.sh 
- 1299  ls
- 1300  cd src/
- 1301  ls
- 1302  touch algoMas
- 1303  dmesg | head > algoMas 
- 1304  cd ..
- 1305  ls
- 1306  git status 
- 1307  git add src/algoMas 
- 1308  git commit -m "Ejemplo de clone"
- 1309  git remotes -v
- 1310  git remote -v
- 1311  git push origin master
- 1312  pushd /media/instructor/uk/LXS2/docs/src/
- 1313  ls
- 1314  ls -l
- 1315  git log
- 1316  git pull github 
- 1317  tree
- 1318  git branch
- 1319  ls -l
- 1320  id
- 1321  apt-cache search virtmanager
- 1322  apt-cache search virt-manager
- 1323  apt-cache search qemu
- 1324  apt-cache search qemu-kvm
+ 1299  cd /media/
+ 1300  ls
+ 1301  cd instructor/
+ 1302  l;s
+ 1303  ls
+ 1304  cd i
+ 1305  cd uk/
+ 1306  ls
+ 1307  cd LXS2/
+ 1308  ls
+ 1309  cd clase5/
+ 1310  ls
+ 1311  cd S5/
+ 1312  ls
+ 1313  cd pro
+ 1314  cd proyectoFinal/
+ 1315  ls
+ 1316  cd problema3/
+ 1317  ls
+ 1318  vim Datos 
+ 1319  cd ls
+ 1320  ls
+ 1321  cd ..
+ 1322  cd..
+ 1323  ls
+ 1324  cd ..
  1325  ls
- 1326  cd ..
+ 1326  cd docs/
  1327  ls
- 1328  mkdir permisos
- 1329  cd permisos/
- 1330  s
- 1331  ls
- 1332  cd ..
- 1333  ls
- 1334  cd ..
- 1335  ls
- 1336  ls sudo/
- 1337  ls
- 1338  cd docs/
- 1339  ls
- 1340  cd permisos/
- 1341  ls
- 1342  script -t 2> sudoers.timing -a sudoers.session
- 1343  ls -l
- 1344  man scriptreplay 
- 1345  scriptreplay -t sudoers.timing sudoers.session 
- 1346  ls
- 1347  cd ..
- 1348  ls
- 1349  cd history/
- 1350  ls
- 1351  history > history 
+ 1328  tree
+ 1329  touch permisos/mail-`date +%M%Y`.out 
+ 1330  touch permisos/mail-`date +%M%d`.out 
+ 1331  tree permisos/
+ 1332  git status 
+ 1333  git add permisos/
+ 1334  git status 
+ 1335  dmesg | tail > permisos/mail-502016.out 
+ 1336  dmesg | head > permisos/mail-5029.out 
+ 1337  git status 
+ 1338  git add permisos/
+ 1339  git status 
+ 1340  git commit -m "Archivos para git mv"
+ 1341  git log
+ 1342  tree
+ 1343  git mv permisos/mail-502016.out RecSession/
+ 1344  git rm -r permisos/
+ 1345  git status 
+ 1346  git commit -m "Ejemplo de mv hecho"
+ 1347  git status 
+ 1348  tree
+ 1349  git log
+ 1350  git  checkout 8e2d35ba66cff2d7dabb126914c682f3263fdb58
+ 1351  git branch
+ 1352  gitk
+ 1353  tree
+ 1354  git log
+ 1355  git checkout HEAD
+ 1356  git log
+ 1357  tree
+ 1358  git status
+ 1359  git log
+ 1360  git status 
+ 1361  gitk
+ 1362  git log --decorate
+ 1363  gitk
+ 1364  git ce
+ 1365  git checkout master
+ 1366  git log
+ 1367  ls
+ 1368  cd ..
+ 1369  ls
+ 1370  ls -l
+ 1371  ls
+ 1372  cd fo
+ 1373  cd docs/
+ 1374  ls
+ 1375  git push github master 
+ 1376  cd /tmp/
+ 1377  ls
+ 1378  git clone https://github.com/emvarg/LX2_main_repo.git
+ 1379  sudo rm LX2_main_repo/
+ 1380  sudo rm -r  LX2_main_repo/
+ 1381  git clone https://github.com/emvarg/LX2_main_repo.git RepoEmma
+ 1382  ls
+ 1383  cd RepoEmma/
+ 1384  ls
+ 1385  sudo su -
+ 1386  su user1
+ 1387  su - user1
+ 1388  whoami 
+ 1389  su -c "touch /tmp/archivo_user1" user2
+ 1390  ls -l /tmp/
+ 1391  s
+ 1392  ls
+ 1393  ls ~/..
+ 1394  sudo adduser user1
+ 1395  sudo adduser user2
+ 1396  history | tail
+ 1397  ls ~/..
+ 1398  man su
+ 1399  screen
+ 1400  fdisk -l
+ 1401  cd ..
+ 1402  ls
+ 1403  cd ..
+ 1404  ls
+ 1405  ls tmp/
+ 1406  ls
+ 1407  cd sudo/
+ 1408  ls
+ 1409  ls -l
+ 1410  cd ..
+ 1411  ls
+ 1412  cat /etc/sudoers
+ 1413  ls
+ 1414  cd sudo/
+ 1415  ls
+ 1416  cat commandAliases 
+ 1417  exit
+ 1418  id
+ 1419  su - user1
+ 1420  less /var/mail/instructor
+ 1421  sudo which fdisk
+ 1422  su - user1
+ 1423  which passwd 
+ 1424  which useradd 
+ 1425  which adduser 
+ 1426  which userdel 
+ 1427  which usermod
+ 1428  which visudo
+ 1429  which poweroff
+ 1430  which reboot
+ 1431  which halt
+ 1432  su - user2
+ 1433  ls
+ 1434  vim /etc/sudoers
+ 1435  sudo visudo /etc/sudoers
+ 1436  sudo visudo
+ 1437  ls
+ 1438  cd src/
+ 1439  ls
+ 1440  touch algoMas
+ 1441  dmesg | head > algoMas 
+ 1442  cd ..
+ 1443  ls
+ 1444  git status 
+ 1445  git add src/algoMas 
+ 1446  git commit -m "Ejemplo de clone"
+ 1447  git remotes -v
+ 1448  git remote -v
+ 1449  git push origin master
+ 1450  pushd /media/instructor/uk/LXS2/docs/src/
+ 1451  ls
+ 1452  ls -l
+ 1453  git log
+ 1454  git pull github 
+ 1455  tree
+ 1456  git branch
+ 1457  ls -l
+ 1458  id
+ 1459  apt-cache search virtmanager
+ 1460  apt-cache search virt-manager
+ 1461  apt-cache search qemu
+ 1462  apt-cache search qemu-kvm
+ 1463  ls
+ 1464  cd ..
+ 1465  ls
+ 1466  mkdir permisos
+ 1467  cd permisos/
+ 1468  s
+ 1469  ls
+ 1470  cd ..
+ 1471  ls
+ 1472  cd ..
+ 1473  ls
+ 1474  ls sudo/
+ 1475  ls
+ 1476  cd docs/
+ 1477  ls
+ 1478  cd permisos/
+ 1479  ls
+ 1480  script -t 2> sudoers.timing -a sudoers.session
+ 1481  ls -l
+ 1482  man scriptreplay 
+ 1483  scriptreplay -t sudoers.timing sudoers.session 
+ 1484  ls
+ 1485  cd ..
+ 1486  ls
+ 1487  cd history/
+ 1488  ls
+ 1489  history > history 
+ 1490  cd ..
+ 1491  ls
+ 1492  git status
+ 1493  git add history/history 
+ 1494  git add permisos/
+ 1495  git commit -m "Ejemplo de su + history con scriptreplay"
+ 1496  git push github master 
+ 1497  ls
+ 1498  cd permisos/
+ 1499  ls
+ 1500  git rm *
+ 1501  git commit -m "Limpieza de sesiones"
+ 1502  git status 
+ 1503  cd ..
+ 1504  ls
+ 1505  git status
+ 1506  git commit -m "Limpieza de sesiones"
+ 1507  ;s
+ 1508  ls
+ 1509  mkdir sudoers
+ 1510  cd s
+ 1511  cd sudoers/
+ 1512  los
+ 1513  ls
+ 1514  script -t 2> sudoers.timing -a sudoers.session
+ 1515  ls -l
+ 1516  su - user2
+ 1517  popd
+ 1518  cd /media/
+ 1519  ls
+ 1520  cd instructor/
+ 1521  l;s
+ 1522  ;s
+ 1523  ls
+ 1524  cd
+ 1525  cd /media/instructor/uk/LXS2/docs/
+ 1526  ls
+ 1527  cd sudoers/
+ 1528  ls
+ 1529  cd ..
+ 1530  ls
+ 1531  cd sudoers/
+ 1532  ls
+ 1533  script -t 2> sudoers-2.0.timing -a sudoers-2.0.session
+ 1534  ls
+ 1535  cd ..
+ 1536  ls
+ 1537  git status 
+ 1538  git add sudoers/
+ 1539  git status 
+ 1540  git commit -m "ejemplo Fallido de sudoersgit status !"
+ 1541  git push github master
+ 1542  ls
+ 1543  cd history/
+ 1544  ls
+ 1545  history > history 
