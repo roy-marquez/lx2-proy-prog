@@ -1,168 +1,3 @@
-  187  sudo apt-get -y purge isc-dhcp-server
-  188  sudo su -
-  189  ssh 192.168.222.130
-  190  ssh sysadmin@192.168.222.130
-  191  cat .ssh/id_rsa
-  192  cat .ssh/id_rsa.pub 
-  193  ssh root@104.131.158.69
-  194  ls
-  195  cd Desktop/
-  196  ls
-  197  clear
-  198  ls
-  199  impressive --nologo DNS\ -\ 00\ -\ Introducción\ a\ terminología.pdf 
-  200  impressive --nologo DNS\ -\ 01\ -\ ¿Cómo\ funciona\ un\ DNS\?.pdf 
-  201  impressive --nologo DNS\ -\ 02\ -\ Tipos\ de\ Registro.pdf 
-  202  cat /etc/resolv.conf 
-  203  ls
-  204  cd Desktop/
-  205  ls
-  206  clear
-  207  mv firewall.sh firewall-001.sh
-  208  scp firewall-001.sh sysadmin@192.168.50.216:
-  209  scp firewall-001.sh sysadmin@192.168.50.216:/home/sysadmin/.
-  210  ssh sysadmin@192.168.50.216
-  211  scp sysadmin@192.168.50.216:
-  212  ssh sysadmin@192.168.50.216 "ls -l *.sh"
-  213  hostname
-  214  ssh sysadmin@192.168.50.216 "hostname"
-  215  scp firewall-001.sh sysadmin@192.168.50.216:/home/sysadmin/.
-  216  scp firewall-001.sh sysadmin@192.168.50.216:
-  217  ssh sysadmin@192.168.50.216 "ls -l *.sh"
-  218  ssh sysadmin@192.168.50.216 "hostname"
-  219  ssh-keygen -t rsa -b 2048
-  220  ssh-copy-id sysadmin@192.168.50.216
-  221  ssh sysadmin@192.168.50.216 "hostname"
-  222  ssh sysadmin@192.168.50.216 "ls -la /home/sysadmin/.ssh/*"
-  223  #ssh-copy-id sysadmin@192.168.50.216
-  224  ssh sysadmin@192.168.50.216 "ls -la /home/sysadmin/.ssh/*"
-  225  cd
-  226  whoami
-  227  hostname
-  228  ssh sysadmin@192.168.50.216
-  229  ping 192.168.50.216
-  230  ssh sysadmin@192.168.50.216
-  231  ssh sysadmin@192.168.122.119
-  232  ssh sysadmin@192.168.122.119
-  233  dig
-  234  dig @8.8.8.8
-  235  dig @8.8.8.8 www.ucr.ac.cr
-  236  dig @8.8.8.8 www.arold.co.cr
-  237  dig @8.8.8.8 www.ucr.ac.cr
-  238  dig @8.8.8.8 www.bac.net
-  239  dig @8.8.8.8 www.bac.net 
-  240  dig @8.8.8.8 www.bac.net +short
-  241  dig @8.8.8.8 www.bac.net +shor
-  242  dig @8.8.8.8 www.bac.net
-  243  dig @8.8.8.8 www.bac.net +short
-  244  dig @8.8.8.8 www.ucr.ac.cr +short
-  245  dig @8.8.8.8 correo.ucr.ac.cr +short
-  246  dig www.ucr.ac.cr +short
-  247  dig @163.178.88.2 correo.ucr.ac.cr +short
-  248  dig @163.178.88.2 correo.ucr.ac.cr
-  249  dig @8.8.. correo.ucr.ac.cr
-  250  dig @8.8.8.8 correo.ucr.ac.cr
-  251  dig @8.8.8.8 ucr.ac.cr NS
-  252  dig @8.8.8.8 bac.net 
-  253  dig @8.8.8.8 ns1.credomatic.com
-  254  dig @8.8.8.8 bac.net NS
-  255  dig @8.8.8.8 bac.net MX
-  256  dig @8.8.8.8 ns1.credomatic.com A
-  257  dig @8.8.8.8 fod.ac.cr A
-  258  dig @8.8.8.8 www.fod.ac.cr A
-  259  dig @8.8.8.8 tec.ac.cr A
-  260  dig @8.8.8.8 www.tec.ac.cr A
-  261  dig @8.8.8.8 tec.ac.cr A
-  262  dig @8.8.8.8 www.fod.ac.cr SOA
-  263  dig @8.8.8.8 www.ucr.ac.cr SOA
-  264  dig @8.8.8.8 www.fod.ac.cr A
-  265  dig @8.8.8.8 www.fod.ac.cr SOA
-  266  dig @8.8.8.8 www.fod.ac.cr NS
-  267  dig @8.8.8.8 www.fod.ac.cr MX
-  268  dig @8.8.8.8 www.google.com A
-  269  dig @8.8.8.8 gmail.google.com
-  270  dig @8.8.8.8 gmail.com
-  271  dig @8.8.8.8 gmail.com MX
-  272  dig @8.8.8.8 gmail.com
-  273  dig @8.8.8.8 www.fod.ac.cr MX
-  274  dig @8.8.8.8 tec.ac.cr MX
-  275  dig @8.8.8.8 microsoft.com MX
-  276  dig @8.8.8.8 microsoft.com A
-  277  dig @8.8.8.8 yahoo.com MX
-  278  dig @8.8.8.8 yahoo.com A
-  279  dig @8.8.8.8 www.google..com A
-  280  dig @8.8.8.8 www.google.com A
-  281  dig @8.8.8.8 www.google..com A
-  282  dig @8.8.8.8 www.google.com A > /dev/null 
-  283  dig @8.8.8.8 google.com MX > /dev/null 
-  284  dig @8.8.8.8 www.fod.ac.cr A > /dev/null 
-  285  dig @8.8.8.8 www.fod.ac.cr MX > /dev/null 
-  286  dig @8.8.8.8 www.fod.ac.cr AAAA > /dev/null 
-  287  #dig @8.8.8.8 www.fod.ac.cr AAAA > /dev/null 
-  288  #dig @8.8.8.8 www.fod.ac.cr AAAA
-  289  dig @8.8.8.8 www.fod.ac.cr AAAA
-  290  dig @8.8.8.8 www.google.com A
-  291  dig @8.8.8.8 -x 201.191.202.173
-  292  dig -x 201.191.202.173
-  293  dig @8.8.8.8 www.google.com A
-  294  dig @8.8.8.8 www.fod.ac.cr AAAA
-  295  dig @8.8.8.8 www.fod.ac.cr A
-  296  dig -x 186.177.98.5
-  297  dig @8.8.8.8 www.amazon.com A
-  298  dig -x 54.239.17.6
-  299  dig @8.8.8.8 www.ucr.ac.cr NS
-  300  dig @8.8.8.8 ucr.ac.cr NS
-  301  dig @8.8.8.8 www.ucr.ac.cr NS
-  302  dig @8.8.8.8 ucr.ac.cr NS
-  303  ls
-  304  htop
-  305  tree Documents/
-  306  apt-get install tree
-  307  sudo apt-get install tree
-  308  exit
-  309  ls
-  310  exit
-  311  ssh uk@163.178.110.4
-  312  ls
-  313  nohup apt-get update 
-  314  nohup sudo apt-get update 
-  315  ps aux | grep nohup
-  316  nohup sudo apt-get update 
-  317  htop
-  318  ssh uk@163.178.110.47
-  319  ssh uk@163.178.110.4
-  320  ssh uk@163.178.110.7
-  321  ls
-  322  ssh uk@163.178.110.4
-  323  exit
-  324  lsb_release -a
-  325  sudo su -
-  326  uname -a
-  327  cd Downloads/
-  328  ls
-  329  sudo dpkg -i google-chrome-stable_current_amd64.deb 
-  330  apt-cache search chrome
-  331  sudo apt-get install libappindicator1 
-  332  apt-cache search chrome
-  333  sudo dpkg -i google-chrome-stable_current_amd64.deb 
-  334  sudo apt-get -f install
-  335  sudo dpkg -i google-chrome-stable_current_amd64.deb 
-  336  google-chrome
-  337  ip -4 addr
-  338  google-chrome &
-  339  sudo apt-get install ttyrec
-  340  cd 
-  341  ls
-  342  ttyrec
-  343  ttyplay ttyrecord 
-  344  ttyplay ttyrecord LINUX - 000 - Variables de Interprete y Ambiente Archivo
-  345  VAR1=123
-  346  env | grep VAR
-  347  set | grep VAR
-  348  set | less
-  349  printenv | grep VAR
-  350  echo $VAR1
-  351  vim primerPrograma.sh
   352  sh primerPrograma.sh 
   353  vim primerPrograma.sh
   354  ls
@@ -899,102 +734,267 @@
  1085  git status 
  1086  git commit -m "Ejemplo dos de correo electronico y case"
  1087  gitk
- 1088  cd ..
- 1089  ls
- 1090  cd hojasDatos/
+ 1088  cd /media/
+ 1089  cd instructor/uk/
+ 1090  l;s
  1091  ls
- 1092  ls -l
- 1093  xls2csv datos1.xls 
- 1094  nautilus .
- 1095  xls2csv datos1.xls > dato_0.out 
- 1096  less dato_0.out 
- 1097  file dato_0.out 
- 1098  ls
- 1099  cd ..
- 1100  ls
- 1101  tree
- 1102  cd src/
- 1103  ls
- 1104  bash graficar.sh 
- 1105  tree ../
- 1106  for archivo in `ls -l`; do echo $archivo; done
- 1107  for archivo in ls -l; do echo $archivo; done
- 1108  for archivo in find .../ -name "*.xls"; do echo $archivo; done
- 1109  for archivo in `find .../ -name "*.xls"`; do echo $archivo; done
- 1110  for archivo in `find ../ -name "*.xls"`; do echo $archivo; done
- 1111  find ../
- 1112  find ../ -name datos
- 1113  find ../ -name "datos"
- 1114  find ../ -name "*datos*"
- 1115  find ../ -name "*.xls"
- 1116  for archivo in `find ../ -name "*.xls"`; do ls -l $archivo; done 
- 1117  tree ../
- 1118  rm ../hojasDatos/dato_0.out 
- 1119  tree ../
- 1120  rm  -r ../hojasDatos/datos_csv/
- 1121  tree ../
- 1122  bash graficar.sh 
- 1123  tree ../
- 1124  tree -l ../
- 1125  tree -p ../
- 1126  ls ../hojasDatos/datos_csv/
- 1127  ls ../hojasDatos/datos_csv/ -l
- 1128  ls ../hojasDatos/datos_csv/ -lh
- 1129  less ../hojasDatos/datos_csv/dato-0.csv 
- 1130  ls -l
- 1131  less error1.log 
- 1132  ls
- 1133  cd ..
- 1134  ls
- 1135  cd hojasDatos/
- 1136  ls
- 1137  ls -l
- 1138  cd datos_csv/
- 1139  ls -l
- 1140  head dato-0.csv 
- 1141  cat dato-0.csv  
- 1142  cat dato-0.csv  | awk -F "\",\"" `{print $1 $2 $3 $4 $5}` | head
- 1143  cat dato-0.csv  | awk -F "\",\"" '{print $1 $2 $3 $4 $5}' | head
- 1144  cat dato-0.csv  | awk -F "\",\"" '{print $1 " " $2 " " $3 " " $4 " "  $5}' | head
- 1145  cd ..
- 1146  cd .
- 1147  cd ..
- 1148  ls
- 1149  git status 
- 1150  ls
- 1151  tree
- 1152  git add .
- 1153  git status 
- 1154  git commit
- 1155  git log
- 1156  sudo update-alternatives --config editor
- 1157  git remote -v
- 1158  git status 
- 1159  git push -u github master
- 1160  git status 
- 1161  ls
- 1162  cd hojasDatos/
- 1163  kls
- 1164  ls
- 1165  cd ca
- 1166  cd datos_csv/
- 1167  ls
- 1168  cat dato-0.csv  | awk -F "\",\"" '{print $1 " " $2 " " $3 " " $4 " "  $5}' | head
- 1169  cat dato-0.csv  | awk -F "\",\"" '{print $1 " " $2 " " $3 " " $4 " "  $5}' | head | grep -v Sensor
- 1170  cat dato-0.csv  | awk -F "\",\"" '{print $1 " " $2 " " $3 " " $4 " "  $5}' | grep -v Sensor | sed '1,
- 1171  cat dato-0.csv  | awk -F "\",\"" '{print $1 " " $2 " " $3 " " $4 " "  $5}' | grep -v Sensor | sed '1,$ s/"//g'
- 1172  cat dato-0.csv  | awk -F "\",\"" '{print $1 " " $2 " " $3 " " $4 " "  $5}' | grep -v Sensor | sed '1,$ s/"//g' | e
- 1173  cat dato-0.csv  | awk -F "\",\"" '{print $1 " " $2 " " $3 " " $4 " "  $5}' | grep -v Sensor | sed '1,$ s/"//g' | head
- 1174  cat dato-0.csv  | awk -F "\",\"" '{print $1 " " $2 " " $3 " " $4 " "  $5}' | grep -v Sensor | sed '1,$ s/"//g'
- 1175  cd ..
- 1176  ls
- 1177  cd src/
- 1178  ls
- 1179  bash graficar.sh 
- 1180  tree ../
- 1181  head ../hojasDatos/datos_csv/dato-0.out 
- 1182  cd ..
- 1183  ls
- 1184  cd history/
- 1185  ls
- 1186  history > history 
+ 1092  cd LXS2/
+ 1093  ls
+ 1094  cd docs/
+ 1095  ls
+ 1096  git remote -v
+ 1097  git remote add origin https://github.com/emvarg/LX2_main_repo.git
+ 1098  git remote -v
+ 1099  git remote add github  https://github.com/emvarg/LX2_main_repo.git
+ 1100  git remote -v
+ 1101  git push -u github  master
+ 1102  git remote -v
+ 1103  git remote add mi_repo https://github.com/emvarg/repo1-Nivel2Linux.git
+ 1104  git remote -v
+ 1105  git push -u mi_repo  master
+ 1106  git remote -v
+ 1107  git remote --help
+ 1108  git remote remove mi_repo
+ 1109  git remote -v
+ 1110  git branch 
+ 1111  ls
+ 1112  mkdir history
+ 1113  ls
+ 1114  tree
+ 1115  cd history/
+ 1116  ls
+ 1117  history > history
+ 1118  git status 
+ 1119  cd ..
+ 1120  ls
+ 1121  git status 
+ 1122  git add history/
+ 1123  git commit -m "Agregue mi history"
+ 1124  git remote  -v
+ 1125  git push -u github master
+ 1126  history
+ 1127  ls -la
+ 1128  git status 
+ 1129  ls
+ 1130  mkdir hojasExcel
+ 1131  ls
+ 1132  cd hojasExcel/
+ 1133  ls
+ 1134  mkdir hojasDatos
+ 1135  cd j
+ 1136  cd hojasDatos/
+ 1137  ls
+ 1138  cd ..
+ 1139  ls
+ 1140  ls ../../clase5/S5/problemas/problema1/hojasDatos/
+ 1141  ls ../../clase5/S5/problemas/problema1/hojasDatos/ -l
+ 1142  ls
+ 1143  cd hojasDatos/
+ 1144  ls
+ 1145  cp ../../clase5/S5/problemas/problema1/hojasDatos/*.xls .
+ 1146  cp ../../../clase5/S5/problemas/problema1/hojasDatos/*.xls .
+ 1147  ls
+ 1148  ls /l
+ 1149  ls -l
+ 1150  cd ..
+ 1151  ls
+ 1152  cd ..
+ 1153  ls
+ 1154  cd h
+ 1155  cd hojasExcel/
+ 1156  ls
+ 1157  ls -l
+ 1158  mkdir src
+ 1159  ;s
+ 1160  ls
+ 1161  tree
+ 1162  sudo apt-get install catdoc
+ 1163  man catdoc
+ 1164  tree
+ 1165  ls
+ 1166  cd src/
+ 1167  ;s
+ 1168  ls
+ 1169  tree ../../../
+ 1170  tree ../..
+ 1171  ls
+ 1172  vim graficar.sh
+ 1173  exit
+ 1174  cd ..
+ 1175  ls
+ 1176  cd hojasDatos/
+ 1177  ls
+ 1178  ls -l
+ 1179  xls2csv datos1.xls 
+ 1180  nautilus .
+ 1181  xls2csv datos1.xls > dato_0.out 
+ 1182  less dato_0.out 
+ 1183  file dato_0.out 
+ 1184  ls
+ 1185  cd ..
+ 1186  ls
+ 1187  tree
+ 1188  cd src/
+ 1189  ls
+ 1190  bash graficar.sh 
+ 1191  tree ../
+ 1192  for archivo in `ls -l`; do echo $archivo; done
+ 1193  for archivo in ls -l; do echo $archivo; done
+ 1194  for archivo in find .../ -name "*.xls"; do echo $archivo; done
+ 1195  for archivo in `find .../ -name "*.xls"`; do echo $archivo; done
+ 1196  for archivo in `find ../ -name "*.xls"`; do echo $archivo; done
+ 1197  find ../
+ 1198  find ../ -name datos
+ 1199  find ../ -name "datos"
+ 1200  find ../ -name "*datos*"
+ 1201  find ../ -name "*.xls"
+ 1202  for archivo in `find ../ -name "*.xls"`; do ls -l $archivo; done 
+ 1203  tree ../
+ 1204  rm ../hojasDatos/dato_0.out 
+ 1205  tree ../
+ 1206  rm  -r ../hojasDatos/datos_csv/
+ 1207  tree ../
+ 1208  bash graficar.sh 
+ 1209  tree ../
+ 1210  tree -l ../
+ 1211  tree -p ../
+ 1212  ls ../hojasDatos/datos_csv/
+ 1213  ls ../hojasDatos/datos_csv/ -l
+ 1214  ls ../hojasDatos/datos_csv/ -lh
+ 1215  less ../hojasDatos/datos_csv/dato-0.csv 
+ 1216  ls -l
+ 1217  less error1.log 
+ 1218  ls
+ 1219  cd ..
+ 1220  ls
+ 1221  cd hojasDatos/
+ 1222  ls
+ 1223  ls -l
+ 1224  cd datos_csv/
+ 1225  ls -l
+ 1226  head dato-0.csv 
+ 1227  cat dato-0.csv  
+ 1228  cat dato-0.csv  | awk -F "\",\"" `{print $1 $2 $3 $4 $5}` | head
+ 1229  cat dato-0.csv  | awk -F "\",\"" '{print $1 $2 $3 $4 $5}' | head
+ 1230  cat dato-0.csv  | awk -F "\",\"" '{print $1 " " $2 " " $3 " " $4 " "  $5}' | head
+ 1231  cd ..
+ 1232  cd .
+ 1233  cd ..
+ 1234  ls
+ 1235  git status 
+ 1236  ls
+ 1237  tree
+ 1238  git add .
+ 1239  git status 
+ 1240  git commit
+ 1241  git log
+ 1242  sudo update-alternatives --config editor
+ 1243  git remote -v
+ 1244  git status 
+ 1245  git push -u github master
+ 1246  git status 
+ 1247  ls
+ 1248  cd hojasDatos/
+ 1249  kls
+ 1250  ls
+ 1251  cd ca
+ 1252  cd datos_csv/
+ 1253  ls
+ 1254  cat dato-0.csv  | awk -F "\",\"" '{print $1 " " $2 " " $3 " " $4 " "  $5}' | head
+ 1255  cat dato-0.csv  | awk -F "\",\"" '{print $1 " " $2 " " $3 " " $4 " "  $5}' | head | grep -v Sensor
+ 1256  cat dato-0.csv  | awk -F "\",\"" '{print $1 " " $2 " " $3 " " $4 " "  $5}' | grep -v Sensor | sed '1,
+ 1257  cat dato-0.csv  | awk -F "\",\"" '{print $1 " " $2 " " $3 " " $4 " "  $5}' | grep -v Sensor | sed '1,$ s/"//g'
+ 1258  cat dato-0.csv  | awk -F "\",\"" '{print $1 " " $2 " " $3 " " $4 " "  $5}' | grep -v Sensor | sed '1,$ s/"//g' | e
+ 1259  cat dato-0.csv  | awk -F "\",\"" '{print $1 " " $2 " " $3 " " $4 " "  $5}' | grep -v Sensor | sed '1,$ s/"//g' | head
+ 1260  cat dato-0.csv  | awk -F "\",\"" '{print $1 " " $2 " " $3 " " $4 " "  $5}' | grep -v Sensor | sed '1,$ s/"//g'
+ 1261  cd ..
+ 1262  ls
+ 1263  cd src/
+ 1264  ls
+ 1265  bash graficar.sh 
+ 1266  tree ../
+ 1267  head ../hojasDatos/datos_csv/dato-0.out 
+ 1268  cd ..
+ 1269  ls
+ 1270  cd history/
+ 1271  ls
+ 1272  history > history 
+ 1273  cd ..
+ 1274  ls
+ 1275  git status
+ 1276  git add hojasExcel/
+ 1277  git status 
+ 1278  git add history/
+ 1279  git status 
+ 1280  git commit -m "Datos listos para graficar + history"
+ 1281  git push -u github master
+ 1282  exit
+ 1283  cd /media/instructor/uk/
+ 1284  ls
+ 1285  cd LXS2/
+ 1286  ls
+ 1287  cd clase5/
+ 1288  ls
+ 1289  cd S5/
+ 1290  ls
+ 1291  cd problemas/
+ 1292  ls
+ 1293  cd problema
+ 1294  cd problema1/
+ 1295  ls
+ 1296  ls -l
+ 1297  less problema1.0.sh 
+ 1298  cat problema1.0.sh 
+ 1299  ls
+ 1300  cd src/
+ 1301  ls
+ 1302  touch algoMas
+ 1303  dmesg | head > algoMas 
+ 1304  cd ..
+ 1305  ls
+ 1306  git status 
+ 1307  git add src/algoMas 
+ 1308  git commit -m "Ejemplo de clone"
+ 1309  git remotes -v
+ 1310  git remote -v
+ 1311  git push origin master
+ 1312  pushd /media/instructor/uk/LXS2/docs/src/
+ 1313  ls
+ 1314  ls -l
+ 1315  git log
+ 1316  git pull github 
+ 1317  tree
+ 1318  git branch
+ 1319  ls -l
+ 1320  id
+ 1321  apt-cache search virtmanager
+ 1322  apt-cache search virt-manager
+ 1323  apt-cache search qemu
+ 1324  apt-cache search qemu-kvm
+ 1325  ls
+ 1326  cd ..
+ 1327  ls
+ 1328  mkdir permisos
+ 1329  cd permisos/
+ 1330  s
+ 1331  ls
+ 1332  cd ..
+ 1333  ls
+ 1334  cd ..
+ 1335  ls
+ 1336  ls sudo/
+ 1337  ls
+ 1338  cd docs/
+ 1339  ls
+ 1340  cd permisos/
+ 1341  ls
+ 1342  script -t 2> sudoers.timing -a sudoers.session
+ 1343  ls -l
+ 1344  man scriptreplay 
+ 1345  scriptreplay -t sudoers.timing sudoers.session 
+ 1346  ls
+ 1347  cd ..
+ 1348  ls
+ 1349  cd history/
+ 1350  ls
+ 1351  history > history 
