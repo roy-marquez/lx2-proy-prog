@@ -1,0 +1,99 @@
+    1  cd Desktop/
+    2  ls
+    3  cd lx2-proyecto/
+    4  ls
+    5  ls -la
+    6  git log
+    7  cd sudoers/
+    8  ls
+    9  cd ..
+   10  cd lx2-proyecto/
+   11  mkdir problema2
+   12  mkdir problema3
+   13  tar zxf ~/Downloads/proyectoFinal.tar.gz 
+   14  mv ~/Downloads/proyectoFinal/problema2 problema2
+   15  ls
+   16  cd problema2
+   17  ls
+   18  cd problema2
+   19  ls
+   20  mv *.xls ../../problema2
+   21  cd..
+   22  cd ..
+   23  ls
+   24  rm -r problema2
+   25  ls
+   26  cd ..
+   27  mv ~/Downloads/proyectoFinal/problema3/*.* ./problema3
+   28  mv ~/Downloads/proyectoFinal/problema3/* ./problema3
+   29  cd problema3
+   30  ls -la
+   31  less Datos
+   32  cd ..
+   33  git add problema2
+   34  git add problema3
+   35  cd src
+   36  ls
+   37  touch problema2.sh
+   38  touch problema3.sh
+   39  ls
+   40  ls -l
+   41  git add problema2.sh
+   42  git add problema3.sh
+   43  git log
+   44  git status
+   45  cd ..
+   46  ls
+   47  cd proyectoFinal
+   48  ls
+   49  cd ..
+   50  git branch
+   51  git branch proyecto_programado
+   52  git branch --list
+   53  git checkout proyecto_programado
+   54  git branch --list
+   55  git checkout master
+   56  git commit
+   57  git log
+   58  git commit -m "Se agregaron Carpetas problemas 2 y 3, los archivos problema2.sh y problema3.sh, se creo la nueva rama proyecto_programado"
+   59  git log
+   60  git remote add proy-prog-roy https://github.com/roy-marquez/lx2-proy-prog.git
+   61  git push -u proy-prog-roy master
+   62  git branch
+   63  git checkout proyecto_programado
+   64  git push -u proy-prog-roy proyecto_programado
+   65  git add problema2
+   66  ls
+   67  git checkout master
+   68  ls
+   69  cd src
+   70  ls
+   71  cd..
+   72  cd ..
+   73  git checkout -b proyecto_programado
+   74  git branch -d proyecto_programado
+   75  git checkout -b proyecto_programado
+   76  ls
+   77  git push -u proy-prog-roy proyecto_programado
+   78  git branch --list
+   79  cd src
+   80  ls
+   81  cd ..
+   82  ls
+   83  cd hojasExcel/
+   84  ls
+   85  sudo apt-get update
+   86  sudo apt-get install catdoc
+   87  catdoc --help
+   88  man catdoc
+   89  sudo apt-get xls2csv
+   90  sudo apt-get install xls2csv
+   91  ls
+   92  cd hojasDatos
+   93  ls
+   94  xls2csv -x datos1.xls -s cp1252 -d 8859-1 > datos1.txt
+   95  xls2csv datos1.xls > datos1.txt
+   96  cd ..
+   97  ls
+   98  cd history
+   99  history > history-roy
