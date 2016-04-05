@@ -97,3 +97,44 @@
    97  ls
    98  cd history
    99  history > history-roy
+    1  cd lx2-proyecto
+    2  cd Desktop/
+    3  cd lx2-proyecto/
+    4  ls
+    5  cd hojasExcel
+    6  ls
+    7  cd hojasDatos/
+    8  ls
+    9  cd ..
+   10  ls
+   11  cd src
+   12  ls
+   13  cp graficar.sh plot.sh
+   14  vim plot.sh
+   15  cd ../hojasDatos/datos_csv/
+   16  ls
+   17  bash ./plot.sh
+   18  cd plot
+   19  bash ./plot.sh
+   20  cd ..
+   21  git add ./plot
+   22  git status
+   23  bash ./plot.sh
+   24  ls
+   25  bash ./plot.sh
+   26  ls
+   27  cd plot
+   28  bash ./plot.sh
+   29  cd ..
+   30  git add ./plot
+   31  git status
+   32  git branch --list
+   33  git commit -m "Se programa la el script plot que genera un grafico png apartir de archivos de datos *.dat"
+   34  git log
+   35  git remote
+   36  git push -u proy-prog-roy proyecto_programado
+   37  cd ../../../
+   38  ls
+   39  cd history
+   40  ls
+   41  history >> history-roy
